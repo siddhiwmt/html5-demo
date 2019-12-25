@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    text-align: center;
+    background-color: rgb(245, 243, 243);
+    width: 30%;
+
+}
+h3,legend{
+text-align: left;
+}
+label{
+    
+    min-width: 70px;
+    display: inline-block;
+    padding-right: 50px;
+    text-align: start;
+}
+input,select    {
+    margin-bottom:2%;
+    margin-left: 5%;
+}
+
+
+</style>
+<body>
+    <div class="container">
+    <section>
+        <h3>PersonalInformation</h3><br>
+        <label for="firstname">First name:</label><input type="text" name="fname"><br>
+
+        <label for="lastname">last Name:</label><input type="text" name="lname"><br>
+
+        <label for=" date of Birth">Date of Birth:</label><input type="date" name="date" min="1998-12-31" max="2019-12-25"><br>
+        <label for="gender">Gender:</label> <select name="gen">
+                <option value="">choose a gender</option>
+                <option value="m">male</option>
+                <option value="f">female</option>
+                <option value="o">other</option>
+                 </select>
+
+                <!--<select name="month">
+                        <option value="">month</option>
+                        <option value="1">january</option>
+                        <option value="2">February</option>
+                        <option value="3">march</option>
+                        <option value="4">april</option>
+                        <option value="5">may</option>
+                        <option value="6">june</option>
+                        <option value="7">july</option>
+                        <option value="8">august</option>
+                        <option value="9">september</option>
+                        <option value="10">october</option>
+                        <option value="11">november</option>
+                        <option value="12">December</option>   
+                    </select>
+                    <select>
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                    <option value="10">11</option>
+                    <option value="11">12</option>
+                    <option value="12">13</option> 
+                    <option value="13">13</option>
+                    <option value="14">14</option>  
+                
+                </select>-->
+        
+    </section>
+    <section>
+        <h3>Account Information</h3><br>
+        <label for="email">Email:</label><input type="email" name="email"><br>
+        <label for="re-email">Re-type Email:</label><input type="email" name="re_email"><br>
+        <label for="pass">Password:</label><input type="password" name="pwd"><br>
+        <label for="re-type">Re-type Password:</label><input type="password" name="re_pwd"><br>
+        <label for="sec-que"> Security Question :</label> <select name="security">
+                <option value="">Choose a security Question</option>
+                <option value="mob">what was your first mobile no.</option>
+                <option value="place">Your first job place</option>
+                 </select><br>
+        <label for="sec-ans"> Answer:</label><input type="text" name="secure">
+
+
+
+    </section><br>
+    <fieldset>
+        <legend>Contact Details</legend>
+        <label for="address">Address:</label><input type="text" name="address"><br>
+        <label for="city">City:</label><input type="text" name="city"><br>
+        <label for="state">State:</label><select name="state">
+            <option value="guj">Gujarat</option>
+            <option value="mh">Maharashtra</option>
+            <option value="pb">Punjab</option>
+        </select><br>
+        <label for="zipCode">zipCode</label><input type="text" name="zip"> <input type="text" value="Optional" readonly><br>
+        <label for="phone">Phone:</label><input type="text" name="phn"> <select name="opt">
+            <option value="mob">mobile</option>
+            <option value="ph">telephone</option>
+        </select>
+    </fieldset>
+    </div>
+</body>
+</html>
