@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .div1{
+        border: 2px solid;
+        width:30%;
+        text-align: center;
+    }
+    .div2{
+         width:30%;
+        height:500px;
+        
+    }
+    .div3{
+        height:250px;
+        text-align: center;
+       
+    }
+    .box1{
+        background-color: #49d3f5;
+        
+        
+    }
+    .box3{
+        background-color: #f0f0e3;
+       
+        
+    }
+    .box2{
+        background-color: rgb(183, 203, 223);
+        height:250px;
+        position:relative;
+        left:227px;
+        bottom:250px;  
+
+       
+        
+    }
+    .box4{
+       background-color:rgb(238, 215, 238);
+        position:relative;
+        left:227px;
+        bottom:250px;  
+       
+    }
+    .child1{
+        background-color: rgb(32, 32, 182);
+        margin-left: 100px;
+        color: white;
+       
+       
+    }
+    .child2{
+        background-color:#f0f0e3;
+        height:180px;
+        width:80%;
+        margin:25px 25px;
+        border:1px solid red;
+        
+       
+    }
+    .child3{
+        background-color: rgb(32, 32, 182);
+        margin-left: 100px;
+        color: white;
+        position: relative;
+        top:180px;   
+    }
+    .child4{
+        background-color: rgb(32, 32, 182);
+         margin-left: 120px;
+        color: white;
+        margin:80px 70px;
+     }
+    .width{
+        width:50%;
+    }
+    .wi_hi{
+        height: 50px;
+        width:25%;
+    }
+    
+</style>
+<body>
+    <div class="div1">Design 1</div>
+    <div class="div2">
+        <div class="div3">
+            <div class="box1 div3 width"> 1
+               <div class="child1 wi_hi">child1</div>
+            </div>
+            <div class="box2 width">2
+            <div class="child2 "><p>VIEW OUTER MARGIN SHOULD BE SAME ON ALL SIDE</p></div>
+            </div>
+            
+            
+        </div>
+       <div >
+        <div class="box3 div3 width">3
+                <div class="child3 wi_hi">child3</div>
+            </div>
+            <div class="box4 div3 width">4
+                <div class="child4 wi_hi">child4</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
