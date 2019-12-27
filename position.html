@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position_att</title>
+</head>
+<style>
+    .div1 {
+        border: 2px solid;
+        width: 30%;
+        text-align: center;
+    }
+
+    .main_container {
+        width: 30%;
+        height: 500px;
+
+    }
+
+    .sub_container {
+        height: 250px;
+        text-align: center;
+
+    }
+
+    .box1 {
+        background-color: #49d3f5;
+
+
+    }
+
+    .box3 {
+        background-color: #f0f0e3;
+
+
+    }
+
+    .box2 {
+        background-color: rgb(183, 203, 223);
+        height: 250px;
+        position: relative;
+        left: 227px;
+        bottom: 250px;
+
+
+
+    }
+
+    .box4 {
+        background-color: rgb(238, 215, 238);
+        position: relative;
+        left: 227px;
+        bottom: 250px;
+
+    }
+
+    .child1 {
+        background-color: rgb(32, 32, 182);
+        margin-left: 100px;
+        color: white;
+
+
+    }
+
+    .child2 {
+        background-color: #f0f0e3;
+        height: 180px;
+        width: 80%;
+        top: 25px;
+        left: 20px;
+        right: 20px;
+        bottom: 15px;
+        border: 1px solid red;
+        position: absolute;
+
+
+    }
+
+    .child3 {
+        background-color: rgb(32, 32, 182);
+        margin-left: 100px;
+        color: white;
+        position: relative;
+        top: 180px;
+    }
+
+    .child4 {
+        background-color: rgb(32, 32, 182);
+        margin-left: 120px;
+        color: white;
+        margin: 80px 70px;
+    }
+
+    .width {
+        width: 50%;
+    }
+
+    .wi_hi {
+        height: 50px;
+        width: 25%;
+    }
+    
+</style>
+
+<body>
+    <div class="div1">Design 1</div>
+    <div class="main_container">
+        <div class="sub_container">
+            <div class="box1 sub_container width"> 1
+                <div class="child1 wi_hi">child1</div>
+            </div>
+            <div class="box2 width">2
+                <div class="child2 ">
+                    <p>VIEW OUTER MARGIN SHOULD BE SAME ON ALL SIDE</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div>
+            <div class="box3 sub_container width">3
+                <div class="child3 wi_hi">child3</div>
+            </div>
+            <div class="box4 sub_container width">4
+                <div class="child4 wi_hi">child4</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
