@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flexbox</title>
+</head>
+<style>
+    .div1 {
+        border: 2px solid;
+        width: 26%;
+        text-align: center;
+    }
+
+    .div2_container {
+        width: 26%;
+        height: 200px;
+        border: black 2px solid;
+        display: flex;
+    }
+
+
+    .flex_conatiner1 {
+        background-color: rgb(247, 170, 29);
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flex_container2 {
+        flex-wrap: wrap;
+        align-content: space-between;
+        background-color: #f1f1f1;
+
+    }
+
+    .flex_container3 {
+
+        justify-content: space-around;
+        background-color: rgb(190, 233, 190);
+
+    }
+
+    .box1 {
+
+        margin: 50px 20px;
+        text-align: center;
+        font-size: 30px;
+        background-color: #f1f1f1;
+    }
+
+    .search {
+        width: 70%;
+        height: 35px;
+        border: 2px solid;
+    }
+
+    .button {
+        width: 40%;
+        height: 35px;
+        border-radius: 5px;
+        border: 2px solid;
+    }
+
+    .box2 {
+        width: 70px;
+        height: 27%;
+        text-align: center;
+        line-height: 60px;
+        background-color: rgb(225, 234, 243);
+        border: 2px solid rgb(192, 192, 235);
+    }
+
+    .box3 {
+
+        width: 100px;
+        margin: 50px 25px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        background-color: #f1f1f1;
+    }
+    body {
+  background-color: tan;
+  color: black;
+}
+@media only screen and (max-width:600px) {
+  .div1,.div2_container,.flex_conatiner1 ,.flex_conatiner2 ,.flex_conatiner3,.box1,.box3,.search,.button{
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+
+  }
+  
+</style>
+
+<body>
+    <div class="div1">Design 2</div>
+    <div class=" div2_container flex_conatiner1">
+        <div class="box1 search">Search content</div>
+        <div class="box1 button">button</div>
+    </div>
+    <div class=" div2_container flex_container2">
+        <div class="box2" style="margin:0px 40px 40px 0px;">B1</div>
+        <div class="box2" style="margin:0px 0px 40px 205px;">B2</div>
+        <div class="box2" style="margn:60px 0px 0px 0px;">B3</div>
+        <div class="box2" style="margin:0px 0px 0px 245px;">B4</div>
+    </div>
+    <div class=" div2_container flex_container3">
+        <div class="box3">1</div>
+        <div2 class="box3">2</div2 class="box3">
+        <div class="box3">3</div class="box3">
+    </div>
+</body>
+
+</html>
